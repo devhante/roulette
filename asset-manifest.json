@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/roulette/static/css/main.073c9b0a.css",
-    "main.js": "/roulette/static/js/main.60cb4329.js",
+    "main.css": "/roulette/static/css/main.3b6c60e2.css",
+    "main.js": "/roulette/static/js/main.cbb8e4ad.js",
     "static/js/787.137dd8f1.chunk.js": "/roulette/static/js/787.137dd8f1.chunk.js",
-    "static/media/logo.svg": "/roulette/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/3.gif": "/roulette/static/media/3.e44024d2dbe13844dd82.gif",
+    "static/media/1.gif": "/roulette/static/media/1.cd44b81b7a8e1abe10fc.gif",
+    "static/media/2.gif": "/roulette/static/media/2.e216ce4e9097c983e59d.gif",
     "index.html": "/roulette/index.html",
-    "main.073c9b0a.css.map": "/roulette/static/css/main.073c9b0a.css.map",
-    "main.60cb4329.js.map": "/roulette/static/js/main.60cb4329.js.map",
+    "main.3b6c60e2.css.map": "/roulette/static/css/main.3b6c60e2.css.map",
+    "main.cbb8e4ad.js.map": "/roulette/static/js/main.cbb8e4ad.js.map",
     "787.137dd8f1.chunk.js.map": "/roulette/static/js/787.137dd8f1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.60cb4329.js"
+    "static/css/main.3b6c60e2.css",
+    "static/js/main.cbb8e4ad.js"
   ]
 }
