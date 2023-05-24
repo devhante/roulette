@@ -1,0 +1,44 @@
+.Popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Popup > .window {
+  width: 800px;
+  height: 500px;
+  background-color: white;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.6);
+  font-size: 60px;
+}
+
+.Popup > .window .message {
+  padding: 100px 0;
+}
+
+.Popup > .window .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.Popup > .window .button {
+  flex-basis: 200px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 40px;
+  background-color: pink;
+  border: 1px solid black;
+}
+
+.Popup > .window .space {
+  flex-basis: 100px;
+  background-color: none;
+  border: none;
+}

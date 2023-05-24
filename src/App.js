@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Box from "./components/Box";
+import Popup from "./components/Popup";
+import { useState } from "react";
+import ResultPopup from "./components/ResultPopup";
 
 function App() {
+  const [popupEnabled, setPopupEnabled] = useState(false);
+  const [resultPopupEnabled, setResultPopupEnabled] = useState(false);
+  const [boxImage, setBoxImage] = useState(1);
+
+  const handleClickBox = () => {
+    console.log("hello");
+    setPopupEnabled(true);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Popup
+        popupEnabled={popupEnabled}
+        setPopupEnabled={setPopupEnabled}
+        setResultPopupEnabled={setResultPopupEnabled}
+        setBoxImage={setBoxImage}
+      />
+      <ResultPopup
+        resultPopupEnabled={resultPopupEnabled}
+        setResultPopupEnabled={setResultPopupEnabled}
+        setBoxImage={setBoxImage}
+      />
+      <Box
+        boxImage={boxImage}
+        setBoxImage={setBoxImage}
+        setPopupEnabled={setPopupEnabled}
+      />
     </div>
   );
 }
