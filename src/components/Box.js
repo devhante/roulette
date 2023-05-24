@@ -1,24 +1,28 @@
 import "./Box.css";
-
-import image1 from "../images/1.gif";
-import image2 from "../images/2.gif";
-import image3 from "../images/3.gif";
+import background from "../images/background.png";
+import boximg from "../images/box.png";
+import { useEffect, useState } from "react";
 
 function Box(props) {
-  const boxImages = [image1, image2, image3];
-
   const handleClickBox = () => {
-    props.setPopupEnabled(true);
+    if (props.boxImage === 1) {
+      props.setPopupEnabled(true);
+    }
   };
 
-  return (
+  return props.boxImage === 1 ? (
     <div
-      className="Box"
-      onClick={handleClickBox}
-      style={{ backgroundImage: `url(${boxImages[props.boxImage - 1]})` }}
+      className="background"
+      style={{ backgroundImage: `url(${background})` }}
     >
-      상자
+      <div
+        className="boximg"
+        onClick={handleClickBox}
+        style={{ backgroundImage: `url(${boximg})` }}
+      />
     </div>
+  ) : (
+    <img className="boxgif" src={props.boxgif} />
   );
 }
 

@@ -1,35 +1,20 @@
-import { useEffect, useRef } from "react";
 import "./Popup.css";
+import background from "../images/popup.png";
+import yesButton from "../images/yes.png";
+import noButton from "../images/no.png";
 
 function Popup(props) {
-  const ref = useRef();
-  useOnClickOutside(ref, () => {
-    props.setPopupEnabled(false);
-  });
-
-  function useOnClickOutside(ref, handler) {
-    useEffect(() => {
-      const listener = (event) => {
-        if (!ref.current || ref.current.contains(event.target)) {
-          return;
-        }
-        handler(event);
-      };
-      document.addEventListener("mousedown", listener);
-      document.addEventListener("touchstart", listener);
-      return () => {
-        document.removeEventListener("mousedown", listener);
-        document.removeEventListener("touchstart", listener);
-      };
-    }, [ref, handler]);
-  }
-
   const handleClickYesButton = () => {
+    if (props.itemData.length != 0) {
+      const item = props.getRandomItem();
+      props.setRandomItem(item);
+    }
+
     props.setPopupEnabled(false);
     props.setBoxImage(2);
     setTimeout(() => {
       props.setResultPopupEnabled(true);
-    }, 3000);
+    }, 2000);
   };
 
   const handleClickNoButton = () => {
@@ -39,16 +24,22 @@ function Popup(props) {
   if (props.popupEnabled) {
     return (
       <div className="Popup">
-        <div className="window" ref={ref}>
-          <div className="message">오픈하시겠습니까?</div>
+        <div
+          className="window"
+          style={{ backgroundImage: `url(${background})` }}
+        >
           <div className="buttons">
-            <div className="button" onClick={handleClickYesButton}>
-              YES
-            </div>
+            <div
+              className="button1"
+              onClick={handleClickYesButton}
+              style={{ backgroundImage: `url(${yesButton})` }}
+            />
             <div className="space" />
-            <div className="button" onClick={handleClickNoButton}>
-              NO
-            </div>
+            <div
+              className="button2"
+              onClick={handleClickNoButton}
+              style={{ backgroundImage: `url(${noButton})` }}
+            />
           </div>
         </div>
       </div>

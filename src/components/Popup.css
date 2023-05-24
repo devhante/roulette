@@ -12,29 +12,31 @@
 }
 
 .Popup > .window {
-  width: 800px;
-  height: 500px;
-  background-color: white;
+  position: absolute;
+  width: 771px;
+  height: 345px;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.6);
   font-size: 60px;
 }
 
-.Popup > .window .message {
-  padding: 100px 0;
-}
-
 .Popup > .window .buttons {
+  position: relative;
   display: flex;
+  top: 200px;
+  left: 0px;
   justify-content: center;
 }
 
-.Popup > .window .button {
-  flex-basis: 200px;
-  height: 100px;
-  line-height: 100px;
-  font-size: 40px;
-  background-color: pink;
-  border: 1px solid black;
+.Popup > .window .button1 {
+  position: relative;
+  width: 201px;
+  height: 74px;
+}
+
+.Popup > .window .button2 {
+  position: relative;
+  width: 201px;
+  height: 74px;
 }
 
 .Popup > .window .space {

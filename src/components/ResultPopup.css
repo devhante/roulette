@@ -1,0 +1,28 @@
+.ResultPopup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ResultPopup > .window {
+  position: absolute;
+  width: 641px;
+  height: 651px;
+  background-color: white;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.6);
+  font-size: 60px;
+}
+
+.ResultPopup > .window .button {
+  position: relative;
+  top: 568px;
+  left: 252px;
+  width: 137px;
+  height: 50px;
+}
