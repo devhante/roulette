@@ -1,18 +1,28 @@
 {
   "files": {
-    "main.css": "/roulette/static/css/main.3b6c60e2.css",
-    "main.js": "/roulette/static/js/main.cbb8e4ad.js",
+    "main.css": "/roulette/static/css/main.8a92eea3.css",
+    "main.js": "/roulette/static/js/main.5e0c67b8.js",
     "static/js/787.137dd8f1.chunk.js": "/roulette/static/js/787.137dd8f1.chunk.js",
-    "static/media/3.gif": "/roulette/static/media/3.e44024d2dbe13844dd82.gif",
-    "static/media/1.gif": "/roulette/static/media/1.cd44b81b7a8e1abe10fc.gif",
-    "static/media/2.gif": "/roulette/static/media/2.e216ce4e9097c983e59d.gif",
+    "static/media/background.png": "/roulette/static/media/background.d4b606d04d6a9a5573ef.png",
+    "static/media/box.gif": "/roulette/static/media/box.b09c7395a5e337170893.gif",
+    "static/media/box.png": "/roulette/static/media/box.459336d0637411dacf55.png",
+    "static/media/ssr_wand.png": "/roulette/static/media/ssr_wand.4c1cd5c8065cb875678f.png",
+    "static/media/ssr_bow.png": "/roulette/static/media/ssr_bow.a628febd535b0b85cbfc.png",
+    "static/media/sr_bow.png": "/roulette/static/media/sr_bow.618d88a6b7fdee5e6e9c.png",
+    "static/media/sr_sword.png": "/roulette/static/media/sr_sword.2e74a6b9aef679f560e1.png",
+    "static/media/sr_wand.png": "/roulette/static/media/sr_wand.7063e2961fba2bdb72b1.png",
+    "static/media/ssr_sword.png": "/roulette/static/media/ssr_sword.667f9a265eaaaba6746e.png",
+    "static/media/r_bow.png": "/roulette/static/media/r_bow.cabf10477afd684f7909.png",
+    "static/media/r_sword.png": "/roulette/static/media/r_sword.ef146a82c9eb0081b6e9.png",
+    "static/media/r_wand.png": "/roulette/static/media/r_wand.023122bdb33164d6657f.png",
+    "static/media/popup.png": "/roulette/static/media/popup.8416cc7b357e2b7beaad.png",
     "index.html": "/roulette/index.html",
-    "main.3b6c60e2.css.map": "/roulette/static/css/main.3b6c60e2.css.map",
-    "main.cbb8e4ad.js.map": "/roulette/static/js/main.cbb8e4ad.js.map",
+    "main.8a92eea3.css.map": "/roulette/static/css/main.8a92eea3.css.map",
+    "main.5e0c67b8.js.map": "/roulette/static/js/main.5e0c67b8.js.map",
     "787.137dd8f1.chunk.js.map": "/roulette/static/js/787.137dd8f1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b6c60e2.css",
-    "static/js/main.cbb8e4ad.js"
+    "static/css/main.8a92eea3.css",
+    "static/js/main.5e0c67b8.js"
   ]
 }
